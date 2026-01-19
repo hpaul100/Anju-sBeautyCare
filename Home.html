@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anju's Beauty Care | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: rgb(87, 13, 87);
+      --secondary: rgb(202, 115, 226);
+      --background: #fff8fc;
+      --accent: #fbe9f7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--background);
+      color: var(--primary);
+    }
+
+    /* Navigation */
+    .nav {
+      background-color: var(--secondary);
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+      word-spacing: 25px;
+    }
+
+    .nav a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #4b004b;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 20px;
+      color: #4b004b;
+    }
+
+    /* Content Section */
+    .intro {
+      text-align: center;
+      background-color: var(--accent);
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 900px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    /* Images */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .gallery img {
+      border-radius: 15px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--primary);
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Shop.html">Shop</a>
+  </div>
+
+  <header class="header">
+    <h1>Anju's Beauty Care</h1>
+    <p>Enhancing your natural beauty, inside and out</p>
+  </header>
+
+  <section class="intro">
+    <p>
+      Welcome to <strong>Anju's Beauty Care</strong> — your trusted destination for premium beauty services
+      and self-care essentials. We offer exclusive treatments and high-quality beauty products for
+      <strong>hair, skin, makeup, and nails</strong>.
+      Enjoy special 50% discounts for students and senior citizens.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <img src="hair_care.jpg" alt="Hair Care">
+    <img src="skincare.jpeg" alt="Skincare">
+    <img src="nails.jpeg" alt="Nail Care">
+    <img src="spa.jpeg" alt="Spa Treatment">
+  </section>
+
+  <footer>
+    © 2026 Anju's Beauty Care | All rights reserved
+  </footer>
+
+</body>
+</html>

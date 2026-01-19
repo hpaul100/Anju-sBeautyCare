@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anju's Beauty Care | Shop</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: rgb(87, 13, 87);
+      --secondary: rgb(202, 115, 226);
+      --background: #fff8fc;
+      --accent: #fbe9f7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--background);
+      color: var(--primary);
+    }
+
+    /* Navigation */
+    .nav {
+      background-color: var(--secondary);
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+
+    .nav a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      color: #4b004b;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 20px;
+      color: #5a005a;
+    }
+
+    /* Shop Grid */
+    .shop-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .category {
+      margin-bottom: 60px;
+    }
+
+    .category h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .product button {
+      background-color: var(--secondary);
+      border: none;
+      color: var(--primary);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product button:hover {
+      background-color: #d47ae8;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--primary);
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Shop.html">Shop</a>
+  </div>
+
+  <header class="header">
+    <h1>Shop Beauty Essentials</h1>
+    <p>Premium products designed for your self-care routine</p>
+  </header>
+
+  <section class="shop-container">
+
+    <!-- Hair Care -->
+    <div class="category">
+      <h2>Hair Care</h2>
+      <div class="products">
+        <div class="product">
+          <img src="MoroccanOil_Treatment_.85.webp" alt="Hair Oil">
+          <h3>Nourishing Hair Oil</h3>
+          <p>Strengthens hair and adds natural shine.</p>
+          <div class="price">$18.99</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skin Care -->
+    <div class="category">
+      <h2>Skin Care</h2>
+      <div class="products">
+        <div class="product">
+          <img src="DoveFaceCream.jpg" alt="Face Cream">
+          <h3>Hydrating Face Cream</h3>
+          <p>Locks in moisture for soft, glowing skin.</p>
+          <div class="price">$24.99</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nail Care -->
+    <div class="category">
+      <h2>Nail Care</h2>
+      <div class="products">
+        <div class="product">
+          <img src="NailCare.jpeg" alt="Nail Care">
+          <h3>Cuticle Oil</h3>
+          <p>Nourishes nails and promotes healthy growth.</p>
+          <div class="price">$12.99</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Anju's Beauty Care | All rights reserved
+  </footer>
+
+</body>
+</html>
